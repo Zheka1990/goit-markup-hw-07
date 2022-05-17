@@ -115,10 +115,7 @@ padding-left: 15px;
     .comand__link:focus .comand__icon {
         fill: #ffffff;       
     }
-    .comand__link:hover,
-    .comand__link:focus {
-        background-color: #2196F3;
-    }
+    
     .comand__link {
         fill: #AFB1B8;
     }
@@ -134,3 +131,7 @@ padding-left: 15px;
     .comand__item {
         box-shadow: 0px 4px 4px 0px #00000040;
         border-radius: 4px;}
+    .comand__link{
+        &:hover,
+        &:focus{background-color: #2196F3;}
+    }    

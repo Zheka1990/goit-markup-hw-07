@@ -17,7 +17,7 @@ body {
   font: size 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #e5e5e5;
+  color: black;
 }
 
 a {
@@ -93,16 +93,6 @@ p {
   background-color: #F5F4FA;
 }
 
-button:hover {
-  background-color: var(--accent-color);
-  color: var(--white-text);
-}
-
-.button:focus {
-  background-color: var(--accent-color);
-  color: var(--white-text);
-}
-
 .button {
   cursor: pointer;
   transition: color 250ms var(--animation), background-color 250ms var(--animation);
@@ -111,6 +101,11 @@ button:hover {
 button {
   border: none;
   border-radius: 4px;
+}
+
+.button:hover, .button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text);
 }
 
 .header__link {
@@ -347,7 +342,7 @@ button {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -648,11 +643,6 @@ button {
   fill: #ffffff;
 }
 
-.comand__link:hover,
-.comand__link:focus {
-  background-color: #2196F3;
-}
-
 .comand__link {
   fill: #AFB1B8;
 }
@@ -671,6 +661,10 @@ button {
 .comand__item {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 4px;
+}
+
+.comand__link:hover, .comand__link:focus {
+  background-color: #2196F3;
 }
 
 /* Постоянные клиенты */
@@ -726,14 +720,13 @@ button {
   transition: fill 250ms var(--animation);
 }
 
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid var(--accent-color);
-}
-
 .clients__link:hover .clients__icon,
 .clients__link:focus .clients__icon {
   fill: var(--accent-color);
+}
+
+.clients__link:hover, .clients__link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 /* footer indexhtml and portfolio */

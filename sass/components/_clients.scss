@@ -37,18 +37,23 @@
         border: 1px solid #AFB1B8 ;
         border-radius: 4px;
         transition: fill 250ms var(--animation), border 250ms var(--animation);
-    } 
+    }
     .clients__icon {
         fill: #AFB1B8;
         background-position: center;
         background-repeat: no-repeat;
         transition: fill 250ms var(--animation);
     } 
-     .clients__link:hover,
-    .clients__link:focus {
-        border: 1px solid var(--accent-color);
-    }
+     
     
     .clients__link:hover .clients__icon,
     .clients__link:focus .clients__icon {
         fill: var(--accent-color);}  
+
+.clients__link {
+        &:hover,
+        &:focus {
+            border: 1px solid var(--accent-color);
+        }
+        
+}
