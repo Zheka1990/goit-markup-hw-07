@@ -30,8 +30,10 @@
         display: flex;
         list-style-type: none; 
     }
-    .clients__item:last-child {
-            margin-right:0px;
+    .clients__item{
+        &:last-child
+        {margin-right:0px;}
+            
     }
     .clients__link {
         border: 1px solid #AFB1B8 ;
@@ -46,9 +48,7 @@
     } 
      
     
-    .clients__link:hover .clients__icon,
-    .clients__link:focus .clients__icon {
-        fill: var(--accent-color);}  
+    .clients  
 
 .clients__link {
         &:hover,
@@ -56,4 +56,11 @@
             border: 1px solid var(--accent-color);
         }
         
+}
+
+.clients{
+ &:hover,
+ &:focus{
+     fill: var(--accent-color);
+ }
 }

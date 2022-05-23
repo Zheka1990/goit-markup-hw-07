@@ -729,6 +729,10 @@ button {
   border: 1px solid var(--accent-color);
 }
 
+.clients:hover, .clients:focus {
+  fill: var(--accent-color);
+}
+
 /* footer indexhtml and portfolio */
 .footer {
   background-color: #2F303A;
