@@ -720,12 +720,7 @@ button {
   transition: fill 250ms var(--animation);
 }
 
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-  fill: var(--accent-color);
-}
-
-.clients__link:hover, .clients__link:focus {
+.clients .clients__link:hover, .clients .clients__link:focus {
   border: 1px solid var(--accent-color);
 }
 
